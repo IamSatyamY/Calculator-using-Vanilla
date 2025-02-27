@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body{
+    background-color: purple;
+}
+.calc-body{
+    /* border:2px solid red; */
+    width:400px;
+
+}
+.display{
+    border:2px solid white;
+    height:40px;
+}
+.display input{
+    border: 2px solid red;
+    width:100%;
+    height: 100%;
+}
+.buttons{
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.buttons button{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.buttons button:nth-child(1){
+    background-color: rgb(196, 80, 80);
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 2;
+}
+.buttons button:nth-child(2){
+    background-color: red;
+    grid-row:1/span 1;
+    grid-column:3/span 2;
+}
